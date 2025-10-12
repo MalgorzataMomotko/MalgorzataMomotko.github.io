@@ -5,16 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Małgorzata Momotko – Konferencje & Książka</title>
   <meta name="description" content="Zdjęcia z wystąpień i debat, linki do zakupu książki Małgorzaty Momotko. Nowoczesne przywództwo w erze AI i automatyzacji." />
+  <!-- Open Graph -->
   <meta property="og:title" content="Małgorzata Momotko – Konferencje & Książka" />
   <meta property="og:description" content="Zdjęcia z wystąpień i debat, linki do zakupu książki Małgorzaty Momotko." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="og-cover.jpg" />
-  <meta property="og:url" content="https://malgorzatamomotko.github.io/" />
+  <meta property="og:url" content="https://twojadomena.pl/" />
   <style>
     :root{ --bg:#0b1020; --panel:#111833; --muted:#9fb0d1; --fg:#f5f7ff; --accent:#ffd24d; }
     *,*::before,*::after{box-sizing:border-box}
     html,body{margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
-    a{color:var(--accent); text-decoration:none} a:hover{text-decoration:underline}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
     .container{max-width:1100px; margin:0 auto; padding:0 20px}
     header{position:sticky; top:0; backdrop-filter:saturate(1.2) blur(6px); background:rgba(11,16,32,.7); border-bottom:1px solid rgba(255,255,255,.06); z-index:10}
     nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
@@ -29,6 +31,7 @@
     .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 18px; border-radius:14px; font-weight:600; border:1px solid rgba(255,255,255,.14); background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); color:var(--fg)}
     .btn.primary{background:linear-gradient(180deg, #ffd24d, #e0b73d); color:#1b1200; border-color:#f2c74b}
     .btn:hover{transform:translateY(-1px)}
+    /* Gallery */
     .section{padding:40px 0}
     .section h3{font-size:24px; margin:0 0 10px}
     .section p.lead{color:var(--muted); margin:0 0 22px}
@@ -39,15 +42,19 @@
     .card .body{padding:12px 14px}
     .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
     .tag{font-size:12px; padding:4px 8px; border-radius:999px; border:1px solid rgba(255,255,255,.15); color:var(--muted)}
-    dialog{border:none; padding:0; border-radius:16px; max-width:min(92vw, 1100px); background:#000;} dialog::backdrop{background:rgba(0,0,0,.66)}
+    /* Lightbox using <dialog> */
+    dialog{border:none; padding:0; border-radius:16px; max-width:min(92vw, 1100px); background:#000; }
+    dialog::backdrop{background:rgba(0,0,0,.66)}
     .lightbox img{display:block; width:100%; height:auto}
     .lightbox .bar{display:flex; justify-content:space-between; align-items:center; padding:8px 12px; background:rgba(255,255,255,.04)}
     .icon-btn{background:transparent; color:#fff; border:1px solid rgba(255,255,255,.2); padding:8px 12px; border-radius:10px; cursor:pointer}
+    /* Book CTA */
     .book{display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:center}
     .book .panel{background:var(--panel); border:1px solid rgba(255,255,255,.06); border-radius:18px; padding:18px}
     .stores{display:flex; flex-wrap:wrap; gap:12px; margin-top:10px}
     .buy{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:14px; background:#182247; border:1px solid rgba(255,255,255,.12); color:#fff; font-weight:600}
     .buy:hover{background:#1c2a5a}
+    /* Footer */
     footer{padding:34px 0; color:var(--muted); border-top:1px solid rgba(255,255,255,.06)}
     .small{font-size:14px}
     @media (max-width: 920px){ .card{grid-column:span 6} .book{grid-template-columns:1fr} }
@@ -71,22 +78,27 @@
     </div>
   </header>
 
-  <!-- O MNIE jako HERO -->
+  <!-- 🔹 O MNIE (hero sekcja na górze strony) -->
   <section class="hero" id="o-mnie">
     <div class="container">
       <h2>Małgorzata Momotko — nowoczesne przywództwo w IT, automatyzacja i AI</h2>
-      <p>Pomagam liderom i organizacjom przyspieszać dostarczanie wartości: od usprawnienia operacji po strategiczne wdrożenia AI i automatyzacji. Jako autorka książki
-        <em>„Od Service Desku do Leadership Teamu”</em> pokazuję praktyczną drogę od operacji do przywództwa, a w mentoringu i na wykładach łączę narzędzia, procesy i kompetencje lidera z realnymi wynikami biznesowymi.</p>
+      <p style="color:var(--muted); max-width:820px;">
+        Pomagam liderom i organizacjom przyspieszać dostarczanie wartości: od usprawnienia operacji po strategiczne wdrożenia AI i automatyzacji.
+        Jako autorka książki <em>„Od Service Desku do Leadership Teamu”</em> pokazuję praktyczną drogę od operacji do przywództwa,
+        a w mentoringu i na wykładach łączę narzędzia, procesy i kompetencje lidera z realnymi wynikami biznesowymi.
+      </p>
+
       <ul class="small" style="margin:0 0 14px 18px; max-width:820px; color:var(--muted);">
         <li>Executive presence i rozwój kompetencji liderskich</li>
         <li>AI &amp; automatyzacja w usługach IT (CIIM, DWP, IIM)</li>
         <li>Skalowanie delivery w środowisku międzynarodowym</li>
         <li>Kultura ciągłego doskonalenia i mierzalne KPI</li>
       </ul>
+
       <div class="cta">
         <a class="btn primary" href="#ksiazka">Kup książkę</a>
-        <a class="btn" href="#galeria">Zobacz galerię</a>
         <a class="btn" href="#kontakt">Mentoring / Wystąpienia</a>
+        <a class="btn" href="#galeria">Zobacz galerię</a>
       </div>
     </div>
   </section>
@@ -96,7 +108,6 @@
       <h3>Galeria z konferencji</h3>
       <p class="lead">Kliknij miniaturę, aby otworzyć zdjęcie w powiększeniu.</p>
       <div class="grid" id="gallery">
-        <!-- Podmień src i alt lub usuń przykłady -->
         <article class="card">
           <a href="techconnect-1.jpg" data-caption="TechConnect – keynote">
             <div class="thumb"><img src="techconnect-1_small.jpg" alt="Wystąpienie na TechConnect"></div>
@@ -144,9 +155,8 @@
         <h3>Książka: „Od Service Desku do Leadership Teamu”</h3>
         <p class="lead">Praktyczny przewodnik dla menedżerów IT: odpowiedzialność, priorytety, decyzje oparte na danych i kultura egzekucji w erze AI.</p>
         <div class="stores">
-          <a class="buy" href="https://bit.ly/4mGXEUa" target="_blank" rel="noopener">Kup w Empik</a>
-          <a class="buy" href="https://www.amazon.co.uk/dp/B0DZ3CQ23R" target="_blank" rel="noopener">Kup na Amazon (ebook)</a>
-          <a class="buy" href="https://www.amazon.pl/dp/B0F3PJ1FST" target="_blank" rel="noopener">Wersja papierowa (PL)</a>
+          <a class="buy" href="https://www.empik.com/od-service-desku-do-leadership-teamu-momotko-malgorzata,p1667641759,ebooki-i-mp3-p" target="_blank" rel="noopener">Kup w Empik</a>
+          <a class="buy" href="https://www.amazon.pl/dp/B0F3PJ1FST" target="_blank" rel="noopener">PL Wersja papierowa</a>
         </div>
       </div>
       <div class="panel">
@@ -158,7 +168,31 @@
   <section id="kontakt" class="section">
     <div class="container">
       <h3>Kontakt / Współpraca</h3>
-      <p class="lead">Wystąpienia, warsztaty dla liderów IT, wdrożenia kultury przywództwa w erze AI. Napisz: <a href="mailto:m.momotko@gmail.com">m.momotko@gmail.com</a></p>
+      <h4>🌟 Nowoczesne Przywództwo w Erze AI</h4>
+      <p>Praktyczne zasoby dla menedżerów IT i liderów — pomagam budować zespoły wysokiej efektywności, podejmować decyzje oparte na danych i prowadzić z pewnością siebie w erze sztucznej inteligencji i automatyzacji.</p>
+      <h4>🚀 Jak mogę Ci pomóc</h4>
+      <ul>
+        <li>✅ Wzmacniać kompetencje liderskie i inspirować zespoły do osiągania wyników.</li>
+        <li>✅ Zarządzać złożonością z jasnością — stosując proste frameworki do decyzji i priorytetów.</li>
+        <li>✅ Mądrze korzystać z AI i danych, aby podnosić efektywność bez utraty ludzkiego aspektu.</li>
+        <li>✅ Budować odpowiedzialność i poczucie własności w zespołach odpornych i skutecznych.</li>
+        <li>✅ Komunikować się z siłą i prostotą, nawet w dynamicznych środowiskach.</li>
+      </ul>
+      <h4>📖 Moja książka</h4>
+      <p><strong>„Od Service Desku do Leadership Teamu”</strong><br>Praktyczny przewodnik dla menedżerów IT o odpowiedzialności, priorytetach, podejmowaniu decyzji i dyscyplinie liderskiej w erze AI.</p>
+      <ul>
+        <li>👉 <a href="https://www.empik.com/od-service-desku-do-leadership-teamu-momotko-malgorzata,p1667641759,ebooki-i-mp3-p" target="_blank">Kup w Empik</a></li>
+        <li>👉 <a href="https://www.amazon.co.uk/dp/B0DZ3CQ23R" target="_blank">Kup na Amazon (EN edition)</a></li>
+        <li>👉 <a href="https://www.amazon.pl/dp/B0F3PJ1FST" target="_blank">PL Wersja papierowa</a></li>
+      </ul>
+      <h4>🎯 Mentoring ze mną</h4>
+      <p>Jeśli chcesz wyjść poza teorię i frameworki — możesz pracować ze mną bezpośrednio. Oferuję sesje mentoringowe 1:1 dla menedżerów IT, którzy chcą:</p>
+      <ul>
+        <li>Awansować na wyższe stanowiska liderskie</li>
+        <li>Poprawić efektywność i kulturę zespołu</li>
+        <li>Zbudować pewność w podejmowaniu decyzji i komunikacji</li>
+      </ul>
+      <p>📩 Napisz do mnie: <a href="mailto:m.momotko@gmail.com">m.momotko@gmail.com</a></p>
     </div>
   </section>
 
@@ -169,17 +203,20 @@
   </footer>
 
   <script>
+    // Lightbox
     const dlg = document.getElementById('lightbox');
     const big = document.getElementById('big');
     const cap = document.getElementById('caption');
-    const gallery = document.getElementById('gallery');
-    if(gallery){
-      gallery.addEventListener('click', (e)=>{
-        const a = e.target.closest('a'); if(!a) return;
-        e.preventDefault(); big.src = a.getAttribute('href'); cap.textContent = a.dataset.caption || ''; dlg.showModal();
-      });
-    }
+    document.getElementById('gallery').addEventListener('click', (e)=>{
+      const a = e.target.closest('a');
+      if(!a) return;
+      e.preventDefault();
+      big.src = a.getAttribute('href');
+      cap.textContent = a.dataset.caption || '';
+      dlg.showModal();
+    });
     document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && dlg.open) dlg.close(); });
+    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
